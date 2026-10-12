@@ -1,0 +1,19 @@
+﻿{{>head}}
+
+<body>
+  <form action="/insert" method="POST">
+    <label for="s1">s1</label>
+    <input type="text" id="s1" name="s1" placeholder="s1">
+    <label for="s2">s2</label>
+    <input type="text" id="s2" name="s2" placeholder="s2">
+    <label for="s3">s3</label>
+    <input type="text" id="s3" name="s3" placeholder="s3">
+    <label for="s4">s4</label>
+    <input type="text" id="s4" name="s4" placeholder="s4">
+    <label for="s5">s5</label>
+    <input type="text" id="s5" name="s5" placeholder="s5">
+    
+    <input type="submit" name="save">
+  </form>
+</body>
+</html>

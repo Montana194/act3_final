@@ -1,0 +1,32 @@
+{{>head}}
+
+<body>
+  <h1>Device List</h1>
+  <a href="/add">Add Device</a>
+  <br>
+
+  {{#each devices}}
+    <label>Device ID: {{id}}</label>
+    <br>
+
+    <input type="text" name="s1" value="{{s1}}" readonly>
+    <br>
+    <input type="text" name="s2" value="{{s2}}" readonly>
+    <br>
+    <input type="text" name="s3" value="{{s3}}" readonly>
+    <br>
+    <input type="text" name="s4" value="{{s4}}" readonly>
+    <br>
+    <input type="text" name="s5" value="{{s5}}" readonly>
+    <br>
+
+    <a href="/edit/{{id}}">Edit</a>
+    <form method="POST" action="/delete/{{id}}">
+      <input type="submit" name="delete" value="Delete">
+    </form>
+    <hr>
+  {{else}}
+    <p>No devices in the database.</p>
+  {{/each}}
+
+{{>footer}}
